@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    .container{
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        z-index: 1;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .modal-dialog{
+        border: 5px solid black;
+    }
+    .modal-header{
+        
+        font-size: 40px;
+        background-color: grey;
+        color: white
+    }
+    
+    .modal-buttons{
+        
+        text-align: right;
+    }   
+ 
+</style>
+<body>
+        
+    <div class="container">
+        <div class="modal-dialog">
+            <div class="modal-header">
+            <label class="modal-title">Hello</label>
+            </div>
+            <div class="modal-content">
+            <p>Would you like to subscribe to our email newsletter?</p> </div>
+            <div class="modal-buttons">
+                <button>Ok</button>
+                <button>Cancel</button>
+            </div>
+            </div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbot exercise 1</title>
+</head>
+<style>
+
+    .body{
+
+        display:flex;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .header{
+        padding: 20px;
+        border: 2px solid black;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .aside{
+        padding: 20px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        width: 300px;
+
+    }
+        
+    .container{
+        flex-grow: 1;
+        display: flex;
+        align-items: stretch;
+        min-height: 500px;
+}
+
+    .content{
+
+        border: 2px solid black;
+        background-color:chartreuse;
+        display: flex;
+        padding: 20px;
+        flex-grow: 1
+    
+        
+    }  
+    .footer{
+
+        padding: 20px;
+        border:2px solid black;
+        display: flex;  
+        bottom:0;
+        background-color:coral;
+        justify-content: center
+        
+    }
+</style>
+    
+<body>
+    
+         <header class="header">This is the header</header>     
+    <div class="container">
+
+        <div class= "content">This is the main content</div>
+
+        <aside class="aside">This is the sidebar</aside>
+                                       
+    </div>
+
+    <footer class="footer">This is the footer</footer>
+</body>
+</html>
