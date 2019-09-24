@@ -1,4 +1,43 @@
-table {
-    background: black;
-    border: 1px, solid, black;
+*{
+    box-sizing: border-box
+}
+
+#table {
+    background: green;
+    padding: 100px;
+    width: 50%;
+    height: 50%;
+
+}
+
+.buttons{
+    background: rgba(153, 101, 42, 0.767);
+    width: 100%;
+    border: 5px, solid, black;
+    text-align: center;
+    
+}
+
+.dealer{
+    width: 100px;
+    padding-bottom: 100px;
+
+}
+
+.hand {
+    padding: 10px;
+    border-radius: 3px;
+    height: 100px;
+    background: #60972a;
+    margin-bottom: 10px;
+
+  }
+
+.hand img{
+    width: 60px;
+    display: block;
+    float: left;
+    height: auto;
+    padding-right: 10px;
+
 }
