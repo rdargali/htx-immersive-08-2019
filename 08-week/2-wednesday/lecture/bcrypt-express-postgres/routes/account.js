@@ -2,6 +2,20 @@ const express = require("express");
 const db = require("../helpers/database");
 const router = express.Router();
 
+<<<<<<< HEAD
+=======
+function checkIsLoggedIn(req, res, next) {
+  if (req.session.user_id) {
+    next();
+  } else {
+    res.redirect("/login");
+  }
+}
+
+router.use(doAnotherThing);
+router.use(checkIsLoggedIn);
+
+>>>>>>> 0c6c1334579aa4d2eb75d53a5fe10e00139f4c46
 router.get("/", (req, res) => {
   res.render("account");
 });

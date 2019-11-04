@@ -16,11 +16,22 @@ app.use(
 );
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
+<<<<<<< HEAD
 app.set("view engine", "pug");
 
 app.get("/", (req, res) => {
   res.render("index");
 });
+=======
+app.use(bodyParser.json());
+app.set("view engine", "pug");
+
+app.get("/", bodyParser, onHomePageLoad, afterPageLoads);
+
+function onHomePageLoad(req, res) {
+  res.render("index");
+}
+>>>>>>> 0c6c1334579aa4d2eb75d53a5fe10e00139f4c46
 
 app.get("/register", (req, res) => {
   res.render("register");

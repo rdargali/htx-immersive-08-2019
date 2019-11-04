@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 const express = require("express");
 const models = require("./models");
 const app = express();
+=======
+const dotenv = require("dotenv");
+const express = require("express");
+const models = require("./models");
+const app = express();
+dotenv.config();
+>>>>>>> 0c6c1334579aa4d2eb75d53a5fe10e00139f4c46
 
 app.set("view engine", "pug");
 

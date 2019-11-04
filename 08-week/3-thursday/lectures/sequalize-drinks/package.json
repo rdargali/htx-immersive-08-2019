@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "dotenv": "^8.2.0",
+>>>>>>> 0c6c1334579aa4d2eb75d53a5fe10e00139f4c46
     "express": "^4.17.1",
     "pg": "^7.12.1",
     "pug": "^2.0.4",

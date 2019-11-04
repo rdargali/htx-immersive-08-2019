@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 const pgp = require("pg-promise")();
 const pgpDb = pgp("postgres://localhost:5432/bcrypt_site");
+=======
+const msqlp = require("mysql-promise")();
+const pgpDb = "mysql://localhost:5432/bcrypt_site";
+>>>>>>> 0c6c1334579aa4d2eb75d53a5fe10e00139f4c46
 
 function toArray(commaSeparatedString) {
   return JSON.stringify(commaSeparatedString.split(",").map(i => i.trim()));
